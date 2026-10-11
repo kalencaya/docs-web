@@ -1,0 +1,29 @@
+[
+  {
+    "text": "nav.introduction",
+    "link": "/introduction/",
+    "activeMatch": "/introduction/"
+  },
+  {
+    "text": "nav.api",
+    "link": "/api/",
+    "activeMatch": "/api/"
+  },
+  {
+    "text": "链接",
+    "items": [
+      {
+        "text": "查看源码",
+        "link": "https://github.com/kalencaya/docs-web"
+      },
+      {
+        "text": "Rspress 文档",
+        "link": "https://rspress.rs/zh/"
+      },
+      {
+        "text": "Rslib 文档",
+        "link": "https://rslib.rs/zh/"
+      }
+    ]
+  }
+]

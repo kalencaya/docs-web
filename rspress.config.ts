@@ -7,8 +7,39 @@ import { pluginWorkspaceDev } from 'rsbuild-plugin-workspace-dev';
 export default defineConfig({
   root: path.join(__dirname, 'docs'),
   base: '/docs-web/',
-  title: 'Rslib Module Doc',
-  lang: 'en',
+  title: 'Docs Web',
+  icon: '/rspress-icon.png',
+  logo: {
+    light: '/rspress-light-logo.png',
+    dark: '/rspress-dark-logo.png',
+  },
+  lang: 'zh',
+  locales: [
+    {
+      lang: 'en',
+      label: 'English'
+    },
+    {
+      lang: 'zh',
+      label: '简体中文'
+    },
+  ],
+  themeConfig: {
+    lastUpdated: true,
+    editLink: {
+      docRepoBaseUrl:
+        'https://github.com/kalencaya/docs-web/docs',
+      text: '📝 在 GitHub 上编辑此页',
+    },
+    socialLinks: [
+      {
+        icon: 'github',
+        mode: 'github-stars',
+        content: 'https://github.com/kalencaya/docs-web',
+      },
+      { icon: 'wechat', mode: 'img', content: '/wechat.png' },
+    ],
+  },
   builderConfig: {
     plugins: [
       pluginWorkspaceDev({
@@ -25,4 +56,12 @@ export default defineConfig({
     }),
     pluginPreview(),
   ],
+  markdown: {
+    defaultWrapCode: true,
+    showLineNumbers: true,
+    link: {
+      checkDeadLinks: false,
+    },
+  },
+  llms: true,
 });
