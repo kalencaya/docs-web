@@ -6,6 +6,7 @@ import { pluginWorkspaceDev } from 'rsbuild-plugin-workspace-dev';
 
 export default defineConfig({
   root: path.join(__dirname, 'docs'),
+  base: '/docs-web/',
   title: 'Rslib Module Doc',
   lang: 'en',
   builderConfig: {
