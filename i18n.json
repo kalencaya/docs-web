@@ -3,6 +3,10 @@
     "zh": "介绍",
     "en": "Introduction"
   },
+  "nav.basic": {
+    "zh": "Web基础",
+    "en": "Web Basic"
+  },
   "nav.api": {
     "zh": "API",
     "en": "API"

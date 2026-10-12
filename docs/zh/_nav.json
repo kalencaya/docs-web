@@ -5,6 +5,11 @@
     "activeMatch": "/introduction/"
   },
   {
+    "text": "nav.basic",
+    "link": "/basic/",
+    "activeMatch": "/basic/"
+  },
+  {
     "text": "nav.api",
     "link": "/api/",
     "activeMatch": "/api/"
